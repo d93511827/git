@@ -10,3 +10,6 @@
 ![](https://i.imgur.com/VXjFbvC.png)  
 第五題實現結果  
 ![](https://i.imgur.com/siCGL7c.png)
+第六題實現結果  
+![](https://i.imgur.com/8EGn0Rk.png)
+![](https://i.imgur.com/qOIpMcq.png)
