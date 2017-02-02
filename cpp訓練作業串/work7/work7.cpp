@@ -8,7 +8,12 @@ Final: 2017/02/02
 using namespace std;
 /*==============================================================*/
 int main(int argc, char const *argv[]){
-	cout<<""
+	int a;
+	char *b;
+	cout<<"請輸入英文字串:";
+	cin>>b;
+	cout<<b;
+	cout<<"1.更改字串 2.轉大寫 3.轉小寫 4.離開"<<endl;
 	cout<<"請輸入相對應數字:";
 	return 0;
 }
