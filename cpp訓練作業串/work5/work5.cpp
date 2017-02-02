@@ -11,6 +11,7 @@ int main(int argc, char const *argv[]){
 	int b=0;
 	int* a=new int[100];
 	while(1){
+		cout<<"請輸入數字(0為離開):";
 		cin>>a[b];
 		if(a[b]==0){
 			break;
