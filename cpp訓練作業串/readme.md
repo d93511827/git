@@ -13,5 +13,5 @@
 第六題實現結果  
 ![](https://i.imgur.com/8EGn0Rk.png)
 ![](https://i.imgur.com/qOIpMcq.png)  
-第六題實現結果  
+第七題實現結果  
 ![](https://i.imgur.com/JQQrS1Y.png)
