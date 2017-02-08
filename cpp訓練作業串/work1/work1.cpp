@@ -8,10 +8,10 @@ Final: 2017/01/20
 using namespace std;
 /*==============================================================*/
 int main(int argc, char const *argv[]){
-	char a[22]={"Hello Word"};
-	
-	cout<<a;
-	return 0;
+    char a[22]={"Hello Word"};
+    
+    cout<<a;
+    return 0;
 }
 /*==============================================================*/
 //2017/01/20 12:15 done

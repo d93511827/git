@@ -8,19 +8,19 @@ Final: 2017/01/21
 using namespace std;
 /*==============================================================*/
 int main(int argc, char const *argv[]){
-	int b=0;
-	int* a=new int[100];
-	while(1){
-		cout<<"請輸入數字(0為離開):";
-		cin>>a[b];
-		if(a[b]==0){
-			break;
-		}
-		b++;
-	}
-	for(int i=0;i<b;i++){
-		cout<<a[i]<<" ";
-	}
-	return 0;
+    int b=0;
+    int* a=new int[100];
+    while(1){
+        cout<<"請輸入數字(0為離開):";
+        cin>>a[b];
+        if(a[b]==0){
+            break;
+        }
+        b++;
+    }
+    for(int i=0;i<b;i++){
+        cout<<a[i]<<" ";
+    }
+    return 0;
 }
 /*==============================================================*/

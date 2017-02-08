@@ -1,20 +1,28 @@
 /*****************************************************************
 Name : 
-Date : 2017/01/20
-By   : Username
-Final: 2017/01/20
+Date : 2017/02/04
+By   : CharlotteHonG
+Final: 2017/02/04
 *****************************************************************/
 #include <iostream>
-#include <cmath>
+#include "SingleLink.hpp"
+#include "SingleLink.cpp"
+
 using namespace std;
 /*==============================================================*/
 int main(int argc, char const *argv[]){
-    double a=3,b=4;
-    //cin>>a>>b;
-    cout<<a<<"^"<<b<<"=";
-    a=pow(a,b);
-    cout<<a;
-
+    // 創建鏈結
+    Node* list = new Node;
+    // 第一點
+    list->data = 1;
+    list->next = new Node;
+    // 第二點
+    list->next->data = 2;
+    list->next->next = nullptr;
+    // 印出
+    pri(list);
+    pri(list->next);
+    priall(list);
     return 0;
 }
 /*==============================================================*/
