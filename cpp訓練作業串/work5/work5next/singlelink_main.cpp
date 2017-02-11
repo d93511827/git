@@ -14,15 +14,21 @@ int main(int argc, char const *argv[]){
     // 創建鏈結
     Node* head = new Node;//定義頭
     Node* tail =new Node;//定義尾
-    //設定初始鏈結架構 空->頭->尾->空
+    //設定初始鏈結架構 空<-頭<->尾->空
     head->previous=nullptr;
     head->next=tail;
     tail->previous=head;
     tail->next=nullptr;
-
     addnode(head,tail);
-    
     priall(head);
+    delenode(head,tail);
+    findnode(head,tail);
+    for(Node* i=head;i!=tail;i=i->next){
+    	setnode(head,tail);
+    }
+    //setnode(head,tail);
+    priall(head);
+ 
     return 0;
 }
 /*==============================================================*/

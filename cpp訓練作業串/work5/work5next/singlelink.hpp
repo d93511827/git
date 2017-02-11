@@ -15,7 +15,13 @@ struct Node {
 };
 // 印出所有節點
 void priall(Node* n);
+//新增節點(插入數字)
 void addnode(Node* head,Node* tail);
-
+//刪除節點
+void delenode(Node* head,Node* tail);
+//查詢
+void findnode(Node* head,Node* tail);
+//排列
+void setnode(Node* head,Node* tail);
 //----------------------------------------------------------------
 #endif
