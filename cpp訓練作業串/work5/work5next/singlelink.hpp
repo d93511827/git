@@ -23,5 +23,7 @@ void delenode(Node* head,Node* tail);
 void findnode(Node* head,Node* tail);
 //排列
 void setnode(Node* head,Node* tail);
+//將所有功能所整合
+void syst(Node* head,Node* tail);
 //----------------------------------------------------------------
 #endif

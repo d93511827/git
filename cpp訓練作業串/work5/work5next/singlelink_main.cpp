@@ -2,7 +2,7 @@
 Name : 
 Date : 2017/02/11
 By   : CharlotteHonG
-Final: 2017/02/11
+Final: 2017/02/12
 *****************************************************************/
 #include <iostream>
 #include "Singlelink.hpp"
@@ -20,14 +20,8 @@ int main(int argc, char const *argv[]){
     tail->previous=head;
     tail->next=nullptr;
     addnode(head,tail);
-    priall(head);
-    delenode(head,tail);
-    findnode(head,tail);
-    for(Node* i=head;i!=tail;i=i->next){
-    	setnode(head,tail);
-    }
-    //setnode(head,tail);
-    priall(head);
+    syst(head,tail);
+
  
     return 0;
 }
