@@ -10,12 +10,16 @@ Final: 2017/02/16
 using namespace std;
 class mult{
 public:
-	mult(int n,int i,int j):
-	n(n),i(i),j(j){}
+	mult(int n,int i,int j): n(n){
+		this->n=n;
+	}
 public:
 	void pri();
+	void add(int i,int j){
+		this->i=i;
+	}
 private:
-	int n;
+	int const n;
 	int i;
 	int j;
 
