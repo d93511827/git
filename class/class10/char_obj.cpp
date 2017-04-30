@@ -25,7 +25,9 @@ public:
         
     }
     
-    //~Str();
+    // ~Str(){
+    //     delete [] s;
+    // };
 public:
     Str(const Str & rhs){
         this->len = rhs.len;
@@ -45,14 +47,16 @@ public:
         }
         //return (*this);
    }
-  /* char operator+(Str const &lhs, Str const &rhs){
-        return 
-   }*/
-   char operator[](size_t idx){
-        return this->s[idx];
+   
+   char & operator[](size_t idx){
+        return s[idx];
    }
-   void operator=(const char & rhs){
-        this->s[len]=rhs;
+   void resize(size_t a){
+        this->len=a;
+        this->s=new char[this->len];
+        for(size_t i=0;i<a;++i){
+            this->s[i]=i+65;
+        }
    }
    Str operator+=(Str const &rhs){
         size_t qq=this->len;
@@ -97,9 +101,12 @@ int main(int argc, char const *argv[]){
     c.pri("c");
     // print "Hello World！" x2
     for (int i = 0; i < c.size(); ++i){
-        c[i]="1";
-    }c+="\n\0";
+        c[i]=i+65;
+    };
+    c.pri();
     cout << endl;
+    c.resize(3);
+    c.pri();
     
 
     return 0;
