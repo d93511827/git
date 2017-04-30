@@ -48,6 +48,12 @@ public:
   /* char operator+(Str const &lhs, Str const &rhs){
         return 
    }*/
+   char operator[](size_t idx){
+        return this->s[idx];
+   }
+   void operator=(const char & rhs){
+        this->s[len]=rhs;
+   }
    Str operator+=(Str const &rhs){
         size_t qq=this->len;
         char* q=new char[this->len];
@@ -61,7 +67,9 @@ public:
         }
         return *this;
    }
-   
+   int size(){
+        return len;
+   }
    void pri(string name=""){
         if(name != "")
             cout << name << " = ";
@@ -88,9 +96,10 @@ int main(int argc, char const *argv[]){
     c = a+b; // c is "Hello World！" x2
     c.pri("c");
     // print "Hello World！" x2
-    /*for (int i = 0; i < a.size(); ++i){
-        cout << a[i];
-    }cout << endl;*/
+    for (int i = 0; i < c.size(); ++i){
+        c[i]="1";
+    }c+="\n\0";
+    cout << endl;
     
 
     return 0;
