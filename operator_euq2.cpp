@@ -30,6 +30,7 @@ public:
         delete [] s;
     };
 public:
+
     Str(const Str & rhs){
         this->len = rhs.len;
         this->s = new char[this->len];
@@ -89,6 +90,7 @@ public:
         } cout << endl;
         
     }
+    friend ostream &operator<<(ostream &s, Str p); 
 private:
     size_t len;
     char* s;
@@ -96,6 +98,10 @@ private:
 Str operator+(Str const &lhs, Str const &rhs){
     return Str(lhs)+=rhs;
 }
+ostream &operator<<(ostream &s, Str  b) { 
+    s<<"pri s="<<b.s<<endl;
+    return s; 
+} 
 //================================================================
 int main(int argc, char const *argv[]){
     Str a="Hello World!";
@@ -103,7 +109,6 @@ int main(int argc, char const *argv[]){
     b.pri("b");
     Str c;
     b+=b;
-
 
 
     b.pri("b");
@@ -117,6 +122,9 @@ int main(int argc, char const *argv[]){
     cout << endl;
     c.resize(3);
     c.pri();
+    cout<<endl;
+    cout<<c;
+
     
 
     return 0;
