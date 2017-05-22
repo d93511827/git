@@ -99,7 +99,10 @@ Str operator+(Str const &lhs, Str const &rhs){
     return Str(lhs)+=rhs;
 }
 ostream &operator<<(ostream &s, Str  b) { 
-    s<<"pri s="<<b.s<<endl;
+    s<<"pri s=";
+    for(unsigned i = 0; i < b.len; ++i) {
+            s << b.s[i] ;
+        }
     return s; 
 } 
 //================================================================
