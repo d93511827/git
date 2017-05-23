@@ -79,6 +79,13 @@ public:
        // delete [] q;
         return *this;
    }
+   Str operator+=(const char* rhs){
+   	strcat(this->s,rhs);
+   	strcat(this->s,"\0");
+   	cout<<"test";
+   	return *this;
+	
+   }
    int size(){
         return len;
    }
@@ -99,10 +106,7 @@ Str operator+(Str const &lhs, Str const &rhs){
     return Str(lhs)+=rhs;
 }
 ostream &operator<<(ostream &s, Str  b) { 
-    s<<"pri s=";
-    for(unsigned i = 0; i < b.len; ++i) {
-            s << b.s[i] ;
-        }
+    s<<"pri s="<<b.s<<endl;
     return s; 
 } 
 //================================================================
@@ -126,8 +130,10 @@ int main(int argc, char const *argv[]){
     c.resize(3);
     c.pri();
     cout<<endl;
+    cout<<c<<endl;
+    c+="asdf";
     cout<<c;
-
+    // const Str& d=c;
     
 
     return 0;
