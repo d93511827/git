@@ -81,15 +81,21 @@ public:
    }
    Str operator+=(const char* rhs){
    	strcat(this->s,rhs);
-   	strcat(this->s,"\0");
-   	cout<<"test";
+   	// strcat(this->s,"\0");
+   	cout<<this->s<<endl;
    	return *this;
-	
+   }
+   Str operator+=(const char rhs){
+    strcat(this->s,rhs);
+
+
+    return *this;
    }
    int size(){
         return len;
    }
    void pri(string name=""){
+
         if(name != "")
             cout << name << " = ";
         for(unsigned i = 0; i < this->len; ++i) {
@@ -105,9 +111,9 @@ private:
 Str operator+(Str const &lhs, Str const &rhs){
     return Str(lhs)+=rhs;
 }
-ostream &operator<<(ostream &s, Str  b) { 
-    s<<"pri s="<<b.s<<endl;
-    return s; 
+ostream &operator<<(ostream &q, Str  b) { 
+    q<<"pri s="<<b.s<<endl;
+    return q; 
 } 
 //================================================================
 int main(int argc, char const *argv[]){
@@ -133,6 +139,7 @@ int main(int argc, char const *argv[]){
     cout<<c<<endl;
     c+="asdf";
     cout<<c;
+    c+='c';
     // const Str& d=c;
     
 
