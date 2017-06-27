@@ -1,4 +1,4 @@
-﻿/*****************************************************************
+/*****************************************************************
 Name : 
 Date : 2017/04/27
 By   : CharlotteHonG
@@ -86,7 +86,7 @@ public:
    	return *this;
    }
    Str operator+=(const char rhs){
-    strcat(this->s,rhs);
+        
 
 
     return *this;
