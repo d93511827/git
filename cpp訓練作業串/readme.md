@@ -17,3 +17,5 @@
 ![](https://i.imgur.com/JQQrS1Y.png)  
 第八題實現結果  
 ![](https://i.imgur.com/ZGzs3X6.png)  
+第九題實現結果  
+![](https://i.imgur.com/0UmtDus.png)
