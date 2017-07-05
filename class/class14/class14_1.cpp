@@ -20,6 +20,7 @@ public:
     // }
 protected:
     int s;
+    chra
 };
 Int_t operator+(Int_t a,Int_t &rhs){
     return a+=rhs;
