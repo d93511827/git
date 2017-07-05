@@ -18,7 +18,12 @@
 第八題實現結果  
 ![](https://i.imgur.com/ZGzs3X6.png)  
 第九題實現結果  
-![](https://i.imgur.com/0UmtDus.png)
+![](https://i.imgur.com/0UmtDus.png)  
+
+
+第十二題實現結果  
+![](https://i.imgur.com/EYDB2Sl.png)
+
   
   
   
