@@ -25,6 +25,9 @@
 ![](https://i.imgur.com/EYDB2Sl.png)
 
   
+第十四題實現結果  
+![](https://i.imgur.com/fXa6ahR.png)
+  
   
   
   
